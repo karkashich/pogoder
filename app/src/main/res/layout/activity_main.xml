@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/Main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fonmain"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/city"
+
+            android:layout_width="231dp"
+
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="84dp"
+
+            android:fontFamily="sans-serif-medium"
+            android:hint=""
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:translationZ="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchEditText" />
+
+        <TextView
+            android:id="@+id/temp"
+
+            android:layout_width="249dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="-2dp"
+            android:fontFamily="sans-serif-medium"
+            android:hint=""
+            android:textColor="#ffffff"
+            android:textSize="48sp"
+            android:translationZ="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/city" />
+
+        <TextView
+            android:id="@+id/description"
+
+            android:layout_width="138dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="100dp"
+            android:fontFamily="sans-serif-medium"
+            android:hint=""
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:translationZ="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/temp" />
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="68dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:translationZ="15dp"
+            app:layout_constraintEnd_toStartOf="@+id/description"
+            app:layout_constraintTop_toBottomOf="@+id/temp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/humidity"
+
+            android:layout_width="228dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif-medium"
+            android:hint=""
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:translationZ="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description" />
+
+        <TextView
+            android:id="@+id/feelslike"
+
+            android:layout_width="228dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="sans-serif-medium"
+            android:hint=""
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:translationZ="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/humidity" />
+
+        <TextView
+            android:id="@+id/wind"
+
+            android:layout_width="228dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="sans-serif-medium"
+            android:hint=""
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:translationZ="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/feelslike" />
+
+        <ImageView
+            android:id="@+id/view"
+            android:layout_width="310dp"
+            android:layout_height="370dp"
+            android:layout_marginTop="64dp"
+            android:alpha="0.70"
+            android:background="@drawable/fon_kard"
+            android:translationZ="-25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <!--    <Button-->
+        <!--        android:id="@+id/searchButton"-->
+        <!--        android:layout_width="49dp"-->
+        <!--        android:layout_height="49dp"-->
+        <!--        android:layout_marginTop="116dp"-->
+        <!--        android:layout_marginEnd="48dp"-->
+        <!--        android:alpha="1"-->
+        <!--        android:onClick="onSearchButtonClick"-->
+        <!--        android:src="@drawable/lupa"-->
+        <!--        android:translationZ="15dp"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintTop_toTopOf="parent"-->
+        <!--        tools:ignore="MissingConstraints,OnClick"-->
+        <!--        tools:src="@drawable/lupa" />-->
+
+        <EditText
+            android:id="@+id/searchEditText"
+            style="@style/NoUnderlineEditText"
+            android:layout_width="227dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="80dp"
+            android:fontFamily="sans-serif-medium"
+            android:hint="Поиск города"
+            android:textColorHint="#757575"
+            android:inputType="text"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:translationZ="15dp"
+            android:typeface="sans"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/view2"
+            android:layout_width="277dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/fon_search"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/searchButton"
+
+            android:layout_width="56dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@id/searchButton"
+            android:layout_alignBottom="@id/searchButton"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="64dp"
+            android:backgroundTint="#00000000"
+            android:scaleType="fitCenter"
+            android:src="@drawable/lupa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/view3"
+            android:layout_width="309dp"
+            android:layout_height="60dp"
+
+            android:layout_marginBottom="170dp"
+            android:alpha="0.70"
+            android:background="@drawable/fon_kard"
+            android:translationZ="-25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/next_button"
+            android:layout_width="80dp"
+            android:layout_height="54dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="174dp"
+            android:backgroundTint="#00000000"
+            android:onClick="onClick"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:src="@drawable/arrow"
+            android:text="@string/next_button_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/prev_button"
+            android:layout_width="80dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginBottom="174dp"
+            android:backgroundTint="#00000000"
+            android:onClick="onClick"
+            android:rotation="180"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:src="@drawable/arrow"
+            android:text="@string/prev_button_text"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="306dp"
+            android:layout_height="85dp"
+            android:layout_marginBottom="44dp"
+            android:alpha="0.75"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/fon_kard" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="71dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginBottom="53dp"
+            android:onClick="onClick"
+            android:backgroundTint="#00000000"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/authors" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="71dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="53dp"
+            android:onClick="onClick"
+            android:backgroundTint="#00000000"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageButton"
+            app:srcCompat="@drawable/home" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="71dp"
+            android:layout_height="68dp"
+            android:layout_marginEnd="72dp"
+            android:layout_marginBottom="53dp"
+            android:onClick="onClick"
+            android:backgroundTint="#00000000"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/towns" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

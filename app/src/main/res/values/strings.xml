@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">pogoder</string>
+    <string name="next_button_text">next</string>
+    <string name="prev_button_text">prev</string>
+</resources>

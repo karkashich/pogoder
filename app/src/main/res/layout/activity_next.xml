@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondIzbr">
+
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="230dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="86dp"
+        android:background="@drawable/olal_find_bacground"
+        android:hint="   Поиск города"
+        android:inputType="text"
+        android:alpha="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/city2"
+        android:layout_width="231dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchEditText" />
+
+
+    <TextView
+        android:id="@+id/temp2"
+        android:layout_width="231dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="40dp"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/city2" />
+
+    <TextView
+        android:id="@+id/description2"
+        android:layout_width="232dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temp2" />
+
+    <ImageView
+        android:id="@+id/icon"
+
+        android:layout_width="59dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="51dp"
+        app:layout_constraintEnd_toStartOf="@+id/description2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temp2" />
+
+    <TextView
+        android:id="@+id/humidity2"
+        android:layout_width="232dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description2" />
+
+    <TextView
+        android:id="@+id/feels_like2"
+        android:layout_width="232dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/humidity2" />
+
+    <TextView
+        android:id="@+id/wind2"
+        android:layout_width="232dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feels_like2" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="95dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="86dp"
+        android:layout_marginEnd="34dp"
+        android:onClick="onSearchButtonClick"
+        android:text="Поиск"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/prev_button"
+        android:layout_width="128dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="91dp"
+        android:onClick="onClick"
+        android:text="@string/prev_button_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="128dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="91dp"
+        android:onClick="onClick"
+        android:text="@string/next_button_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>
